@@ -1,6 +1,6 @@
 local executor = identifyexecutor()
 
-if executor == "Zenith" then
+if executor == "Zenith" or executor == "AWP" or executor == "Awp" then
     local env = getgenv()
     env["setfflag"] = function() end
     env["getfflag"] = function() return 15 end
