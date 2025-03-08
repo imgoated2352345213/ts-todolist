@@ -1,10 +1,6 @@
 local executor = identifyexecutor()
 
-if executor == "Zenith" or executor == "AWP" or executor == "Awp" then
-    local env = getgenv()
-    env["setfflag"] = function() end
-    env["getfflag"] = function() return 15 end
-elseif executor == "Solara" or executor == "Xeno" or executor == "Delta" or executor == "Luna" then
+if executor == "Solara" or executor == "Xeno" or executor == "Delta" or executor == "Luna" then
     game:GetService("Players")["LocalPlayer"]:Kick("Your executor is not supported. You may find a list of supported executors at #information in our discord.")
     return
 end
