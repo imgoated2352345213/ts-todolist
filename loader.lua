@@ -1,7 +1,5 @@
 local executor = identifyexecutor()
 
-local executor = identifyexecutor()
-
 if executor == "Solara" or executor == "Xeno" or executor == "Delta" or executor == "Luna" then
     game:GetService("Players")["LocalPlayer"]:Kick("Your executor is not supported. You may find a list of supported executors at #information in our discord.")
     return
